@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <limits.h>
 #include "queue.h"
+#include <stdbool.h>
 
 
 int *arr = NULL;
@@ -11,7 +12,7 @@ int start = 0;
 int end = 0;
 int max_size = 1;
 
-int resize_array(int new_size)
+void resize_array(int new_size)
 {
   int* new_array = (int *) malloc(new_size * sizeof(int));
   for(int i = 0; i < N; i++)
@@ -88,7 +89,6 @@ void test_queue()
 
 int main()
 {
-  arr = (int *)malloc(max_size*sizeof(int));
   test_queue();
   return 0;
 }
