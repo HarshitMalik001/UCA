@@ -3,12 +3,14 @@
 #include <stdlib.h>
 #include <limits.h>
 #include "queue.h"
+#include <stdbool.h>
 
-int max_size = 4;
+
 int *arr = NULL;
 int N = 0;
 int start = 0;
 int end = 0;
+int max_size = 4;
 
 void push(int data)
 {
