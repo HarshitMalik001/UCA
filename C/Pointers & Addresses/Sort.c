@@ -48,16 +48,14 @@ int main()
                 scanf("%d",&arr[i]);
         }
 
-        int ( *compare )(int, int) = compareAsc;
 
         printArray(arr, n);
 
-        sort(arr, n, compare);
+        sort(arr, n, compareAsc);
         printArray(arr, n);
 
-        compare = &compareDesc;
 
-        sort(arr, n, compare);
+        sort(arr, n, compareDesc);
         printArray(arr, n);
 
         return 0;
