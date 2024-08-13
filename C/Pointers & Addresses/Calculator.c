@@ -37,25 +37,23 @@ int main()
         scanf(" %c",&oper);
         printf("Enter b : ");
         scanf("%d",&b);
-        int (* operation ) (int ,int);
+        
         switch(oper)
         {
                 case '+':
-                        operation =  &add;
-                        performOperation(operation, a, b);
+                        performOperation(add, a, b);
                         break;
 
                 case '-':
-                        operation =  &subtract;
-                        performOperation(operation, a, b);
+                        performOperation(subtract, a, b);
                         break;
+                
                 case '*':
-                        operation =  &multiply;
-                        performOperation(operation, a, b);
+                        performOperation(multiply, a, b);
                         break;
+                
                 case '/':
-                        operation =  &divide;
-                        performOperation(operation, a, b);
+                        performOperation(divide, a, b);
                         break;
         }
         return 0;
