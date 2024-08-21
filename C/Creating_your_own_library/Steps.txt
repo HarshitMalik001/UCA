@@ -1,0 +1,15 @@
+
+Step 1. Define Template
+  $ vim calculator.h
+
+Step 2. Write the Functions 
+  $ vim simple.c
+
+Step 3. Make Executable File
+  $ gcc -c simple.c -o simpleExc
+
+Step 4. Collect the Executable file (using ar)
+  $ ar rcs simpleExc.a simpleExc
+
+Step 5. User run the program
+  $ gcc test.c -L. simpleExc.a
