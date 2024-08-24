@@ -1,0 +1,23 @@
+body{
+    font-size: 40px;
+}
+
+div{
+    margin: 20px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+table,th, td,tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+#productmenu{
+    align-self: flex-start;
+    /* width: 100%; */
+}

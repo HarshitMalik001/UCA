@@ -1,0 +1,55 @@
+building own server using nodejs
+npm init
+npm i express
+change main in package.json to serve.js
+make server.js 
+write
+//  var express = require('express');
+var app=express();
+
+app.use("/",express.static("./frontend"))
+
+app.listen(8080)  //
+
+node server.js
+
+
+Docking mode means line by line
+
+
+
+03/08/2024
+
+defer
+    <!-- it is somewhat similar to defer but unlike defer the browser does'nt block script other script does'nt wait for async script async script does'nt wait for other script -->
+
+async
+    <!-- In defer the atribute tell not to wait for script the browser will continue to load html and the script loads in background and it runs when dom is full loaded  -->
+
+
+Scopes in javascript
+Global Scopes
+Function Scope
+Block Scope
+
+
+JSON.stringify()
+JSON.parse()
+
+var obj1 = {
+  name : "raju", age : "43"
+} 
+
+localStorage.setItem("objs", obj1); 
+
+localStorage.getItem("objs"); 
+"[object Object]" 
+
+localStorage.setItem("objs", JSON.stringify(obj1)); 
+
+localStorage.getItem("objs"); 
+'{"name":"raju","age":"43"}' 
+
+JSON.parse(localStorage.getItem("objs"));
+Object { name: "raju", age: "43" }
+
