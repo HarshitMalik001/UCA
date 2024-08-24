@@ -20,10 +20,10 @@ Docking mode means line by line
 
 03/08/2024
 
-defer
+async
     <!-- it is somewhat similar to defer but unlike defer the browser does'nt block script other script does'nt wait for async script async script does'nt wait for other script -->
 
-async
+defer
     <!-- In defer the atribute tell not to wait for script the browser will continue to load html and the script loads in background and it runs when dom is full loaded  -->
 
 

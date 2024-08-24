@@ -50,5 +50,5 @@ class student1{
     }
 }
 
-var s = new student1('d','dd') 
+var s = new student1('d','dd');
 
