@@ -4,12 +4,16 @@ Step 1. Define Template
 
 Step 2. Write the Functions 
   $ vim simple.c
+  $ vim bitcalc.c
 
 Step 3. Make Executable File
   $ gcc -c simple.c -o simpleExc
+  $ gcc -c bitcalc.c -o bitExc
 
 Step 4. Collect the Executable file (using ar)
   $ ar rcs simpleExc.a simpleExc
+  $ ar rcs bitExc.a bitExc
 
 Step 5. User run the program
   $ gcc test.c -L. simpleExc.a
+  $ gcc test.c -L. bitExc.a
