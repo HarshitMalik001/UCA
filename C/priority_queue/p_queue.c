@@ -51,7 +51,6 @@ void resize_arr(int new_size)
     if(arr == NULL)
     {
         printf("ERROR");
-
     }
 }
 
@@ -59,9 +58,9 @@ void insert(int data)
 {
     if (Csize + 1 >= capacity) { 
         resize_arr(2 * capacity); 
+    	capacity *= 2;
     }
 
-    capacity *= 2;
     arr[++Csize] = data;  
     swim(Csize);
 
@@ -78,7 +77,7 @@ int del()
         resize_arr(capacity / 2);
         capacity /= 2;
     }
-
+    
     return temp;
 }
 

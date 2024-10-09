@@ -1,0 +1,10 @@
+jdk = jre + Development Tools
+jre = jvm + libraries
+jvm = Bytecode Interpretor
+
+
+Constructer, genric, oops
+
+
+PrintStream ??
+Templates ??
