@@ -41,5 +41,25 @@
       "email": "aa@ffd",
       "password": "aaaa"
     }
+  ],
+  "ProductList": [
+    {
+      "name": "Product1",
+      "price": "Product1 Price"
+    },
+    {
+      "name": "Product2",
+      "price": "Product2 Price"
+    },
+    {
+      "id": "0f38",
+      "name": "malik",
+      "price": "1234"
+    },
+    {
+      "id": "ea9d",
+      "name": "swjas",
+      "price": "32323"
+    }
   ]
 }

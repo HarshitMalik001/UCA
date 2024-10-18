@@ -16,7 +16,7 @@ export function SignIn() {
 
         console.log(formValueObject);
 
-        if(formValueObject.firstName && formValueObject.lastName && formValueObject.email && formValueObject.password)
+        if(formValueObject.email && formValueObject.password)
         {
             console.log("Form Submitted");
         }

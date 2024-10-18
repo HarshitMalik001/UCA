@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 
 export function Layout({children})
 {
-    // console.log(props);
+    // console.log(children);
     return (
         <>
         <header>
